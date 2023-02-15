@@ -1,0 +1,122 @@
+@use "../util/mixin" as m;
+
+.sr-only {
+  height: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  width: 0.0625rem;
+  margin: -0.625rem;
+}
+
+.card {
+  @include m.flexDirection(column);
+  align-items: flex-start;
+  background: var(--cardBg);
+  border-radius: 0.625rem;
+  color: var(--soft-blue);
+  font-size: 1rem;
+  font-weight: 300;
+  height: 33.125rem;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  padding: 1.25rem;
+  width: min(100% - 2rem, 20em);
+  margin: 1rem 0;
+
+  .image {
+    @include m.flexDirection(column);
+    border-radius: 0.75rem;
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    background: var(--cyan);
+
+    img {
+      border-radius: 0.625rem;
+      transition: 0.3s linear;
+      width: 100%;
+    }
+
+    svg {
+      position: absolute;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    &:hover {
+      svg {
+        visibility: visible;
+      }
+
+      img {
+        opacity: 0.55;
+      }
+    }
+  }
+
+  a {
+    color: var(--white);
+    transition: 0.2s linear;
+
+    &:hover {
+      color: var(--cyan);
+    }
+  }
+
+  &-heading {
+    font-size: 1.26rem;
+    font-weight: 600;
+  }
+
+  &-info {
+    width: 100%;
+  }
+
+  &-info,
+  &-info span {
+    @include m.flexDirection(row);
+    justify-content: space-between;
+    gap: 0.625rem;
+  }
+
+  .line {
+    background-color: var(--line);
+    height: 0.0625rem;
+    width: 100%;
+  }
+
+  span:first-child {
+    color: var(--cyan);
+    font-weight: 400;
+  }
+
+  &-footer {
+    @include m.flexDirection(row);
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.09rem;
+    width: 100%;
+
+    img {
+      border: 0.0625rem solid var(--white);
+      border-radius: 50%;
+      width: 2.5rem;
+    }
+  }
+}
+
+.attribution {
+  color: #e2eeff;
+  font-size: clamp(0.75rem, calc(0.875rem + 2vw), 0.9375rem);
+  margin: 1rem 0;
+  text-align: center;
+
+  a {
+    color: #6e8bff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
