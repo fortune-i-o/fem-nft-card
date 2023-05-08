@@ -110,4 +110,4 @@ That's it! Now you know how to compile SASS code into CSS for your vanilla HTML 
 
 ## Author
 
-This project was created by **Fortune Iyoha**, a passionate web developer. If you'd like to connect with me or see more of my work, you can check out my [social website](https://fortune-io-socials.pages.dev/) or follow me on [Twitter](https://twitter.com/fortuneiyoha) and [GitHub](https://github.com/fortune-i-o/).
+This project was created by **Fortune Iyoha**, a passionate web developer. If you want to connect with me or view more of my projects, you can visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/fortune-i-o) or follow me on [Twitter](https://twitter.com/fortuneiyoha) for updates and web development discussions.
