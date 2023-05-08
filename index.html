@@ -4,19 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 
 <body>
 
   <main class="card">
-    <h1 class="sr-only"></h1>
-    <!-- Card-Image -->
-    <section class="image">
-      <h2 class="sr-only"></h2>
-      <img src="images/image-equilibrium.jpg" alt="">
+    <!-- Card Image -->
+    <figure class="card__image">
+      <img src="assets/images/image-equilibrium.jpg" alt="">
       <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
           <path d="M0 0h48v48H0z" />
@@ -25,15 +23,16 @@
             fill="#FFF" fill-rule="nonzero" />
         </g>
       </svg>
-    </section>
+    </figure>
 
-    <!-- Card-Heading -->
-    <p><a href="#" class="card-heading">Equilibrium #3429</a></p>
+    <!-- Card Heading -->
+    <h2><a href="#0" class="card__heading">Equilibrium #3429</a></h2>
 
-    <!-- Card-Description -->
+    <!-- Card Description -->
     <p> Our Equilibrium collection promotes balance and calm.</p>
 
-    <section class="card-info">
+    <div class="card__info">
+      <!-- Ethereum Icon -->
       <span>
         <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
@@ -42,7 +41,7 @@
         0.041 ETH
       </span>
 
-      <h2 class="sr-only"></h2>
+      <!-- Clock Icon -->
       <span>
         <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -51,16 +50,15 @@
         </svg>
         3 days left
       </span>
-    </section>
+    </div>
 
     <div class="line"></div>
 
-    <!-- Card-Footer -->
-    <section class="card-footer">
-      <h2 class="sr-only"></h2>
-      <img src="images/image-avatar.png" alt="creator-image">
-      <span> Creation of <a href="#">Jules Wyvern</a></span>
-    </section>
+    <!-- Card Footer -->
+    <footer class="card__footer">
+      <img src="assets/images/image-avatar.png" alt="">
+      <span> Creation of <a href="#0">Jules Wyvern</a></span>
+    </footer>
   </main>
 
   <footer class="attribution">

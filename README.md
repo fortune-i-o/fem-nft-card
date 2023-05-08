@@ -5,18 +5,16 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
+  - [Technology Used](#technology-used)
+  - [Folder Structure](#folder-structure)
+  - [Compiling SASS](#compiling-sass)
 - [Author](#author)
 
 ## Overview
-
-### Screenshot
-
-![nft-preview-card-component-desktop](./screenshots/nft-preview-card-component-desktop.png)
 
 ### The challenge
 
@@ -25,21 +23,91 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Screenshot
+
+![website preview](screenshots/nft-card-desktop.png)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- **Solution:** [Add solution URL here](https://your-solution-url.com)
+- **Live Site:** [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
-### Built with
+### Technology Used
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- **Semantic HTML5 markup:** To provide a clear and meaningful structure to the content.
+- **CSS custom properties:** To efficiently manage and reuse style values throughout the project.
+- **Flexbox:** To create flexible and responsive layouts.
+- **SASS:** To write CSS more efficiently with nested rules, variables, and mixins.
+- **BEM (Block Element Modifier):** To create modular, reusable, and maintainable CSS code.
+- **Mobile-first workflow:** To ensure a better user experience on smaller screens and devices.
+
+### Folder Structure
+
+```markdown
+./
+├─ assets/
+│ ├─ css/
+│ ├─ images/
+│ └─ scss/
+│   ├─ globals/
+│   ├─ layout/
+│   ├─ util/
+│   └─ style.scss
+├─ screenshots/
+├─ index.html
+└─ README.md
+```
+
+### Compiling SASS
+
+If you're new to SASS or need a quick refresher, this guide will walk you through the process of compiling SASS code into CSS for your vanilla HTML project.
+
+#### Prerequisites
+
+Before you start, make sure you have Node.js and NPM installed on your machine. If you don't have them installed, you can download them from [here](https://nodejs.org/en/).
+
+#### Step 1: Create a SASS file
+
+Create a new SASS file in your project's `assets/scss` directory. You can use `style.scss` as your starting point.
+
+#### Step 2: Write your SASS code
+
+Write your SASS code in the SASS file you created in **step 1**. For example:
+
+```scss
+$primary-color: #3d3d3d;
+
+body {
+  background-color: $primary-color;
+}
+```
+
+#### Step 3: Compile your SASS code
+
+Compile your SASS code into CSS by running the following command in your terminal:
+
+```bash
+sass assets/scss/style.scss:assets/css/style.css
+```
+
+This command tells the SASS compiler to compile the `style.scss` file in the `assets/scss` directory and output the resulting CSS into the `assets/css` directory as `style.css`.
+
+#### Step 4: Link your CSS file
+
+Link your compiled CSS file in your HTML file by adding the following code to the `<head>` section:
+
+```html
+<link rel="stylesheet" href="assets/css/style.css" />
+```
+
+#### Step 5: Re-compile your SASS code
+
+Whenever you make changes to your SASS file, you will need to recompile it by running the sass command again. This will update the compiled CSS file and ensure that your changes are reflected in the browser.
+
+That's it! Now you know how to compile SASS code into CSS for your vanilla HTML project. If you have any questions or issues, feel free to refer to the official [SASS documentation](https://sass-lang.com/documentation)
 
 ## Author
 
-- Website - [fortune-io-socials](https://fortune-io-socials.pages.dev/)
-- Frontend Mentor - [@fortune-i-o](https://www.frontendmentor.io/profile/fortune-i-o)
-- Twitter - [@fortune_oi](https://www.twitter.com/fortune_oi)
+This project was created by **Fortune Iyoha**, a passionate web developer. If you'd like to connect with me or see more of my work, you can check out my [social website](https://fortune-io-socials.pages.dev/) or follow me on [Twitter](https://twitter.com/fortuneiyoha) and [GitHub](https://github.com/fortune-i-o/).
