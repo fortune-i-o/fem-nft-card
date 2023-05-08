@@ -52,7 +52,6 @@ Users should be able to:
 │ ├─ images/
 │ └─ scss/
 │   ├─ globals/
-│   ├─ layout/
 │   ├─ util/
 │   └─ style.scss
 ├─ screenshots/
