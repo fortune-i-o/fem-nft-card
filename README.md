@@ -55,8 +55,8 @@ Users should be able to:
 │   ├─ util/
 │   └─ style.scss
 ├─ screenshots/
-├─ index.html
-└─ README.md
+├─ README.md
+└─ index.html
 ```
 
 ### Compiling SASS
