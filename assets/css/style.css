@@ -38,6 +38,17 @@ a:focus-visible {
   outline: 1px solid var(--clr-accent-100);
 }
 
+.visually-hidden {
+  -webkit-clip-path: rect(0, 0, 0, 0);
+          clip-path: rect(0, 0, 0, 0);
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
 .card {
   display: flex;
   justify-content: center;
