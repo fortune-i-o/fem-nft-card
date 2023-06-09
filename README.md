@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- **Solution:** [Add solution URL here](https://your-solution-url.com)
-- **Live Site:** [Add live site URL here](https://your-live-site-url.com)
+- **Solution:** [frontendmentor.io/solutions/nft-preview-card-component-scss-zvzmRM1uEk](https://www.frontendmentor.io/solutions/nft-preview-card-component-scss-zvzmRM1uEk)
+- **Live Site:** [fem-nft-card.pages.dev](https://fem-nft-card.pages.dev/)
 
 ## My process
 
