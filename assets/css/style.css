@@ -38,29 +38,17 @@ a:focus-visible {
   outline: 1px solid var(--clr-accent-100);
 }
 
-.visually-hidden {
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 1px;
-}
-
 .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
+  flex-direction: column;
   background: var(--clr-neutral-700);
   border-radius: 0.625rem;
   color: var(--clr-neutral-300);
   font-size: 1rem;
   font-weight: 300;
   height: 33.125rem;
-  justify-content: space-between;
   line-height: 1.5rem;
   padding: 1.25rem;
   width: min(100% - 2rem, 20em);
@@ -110,10 +98,9 @@ a:focus-visible {
 }
 .card__info, .card__info span {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
   gap: 0.625rem;
 }
 .card .line {
@@ -127,11 +114,9 @@ a:focus-visible {
 }
 .card__footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   gap: 1.09rem;
   width: 100%;
 }

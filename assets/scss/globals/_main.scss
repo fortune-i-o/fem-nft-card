@@ -1,22 +1,20 @@
 @use "../util/" as *;
 
 .card {
-  @include flexDirection(column);
-  align-items: flex-start;
+  @include flex(column, $justify: space-between, $align: flex-start);
   background: var(--clr-neutral-700);
   border-radius: 0.625rem;
   color: var(--clr-neutral-300);
   font-size: 1rem;
   font-weight: 300;
   height: 33.125rem;
-  justify-content: space-between;
   line-height: 1.5rem;
   padding: 1.25rem;
   width: min(100% - 2rem, 20em);
   margin: 1rem 0;
 
   &__image {
-    @include flexDirection(column);
+    @include flex(column);
     border-radius: 0.75rem;
     cursor: pointer;
     margin: 0 auto;
@@ -67,8 +65,7 @@
 
   &__info,
   &__info span {
-    @include flexDirection(row);
-    justify-content: space-between;
+    @include flex(row, $justify: space-between);
     gap: 0.625rem;
   }
 
@@ -84,9 +81,7 @@
   }
 
   &__footer {
-    @include flexDirection(row);
-    align-items: center;
-    justify-content: flex-start;
+    @include flex(row, $justify: flex-start);
     gap: 1.09rem;
     width: 100%;
 
